@@ -13,6 +13,6 @@ COPY app.rb ./
 
 RUN chown -R appuser:appgroup /app
 
-USER appuser
+USER 1000
 
 CMD ["ruby", "app.rb"]
