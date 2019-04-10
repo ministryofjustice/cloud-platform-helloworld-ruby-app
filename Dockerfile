@@ -7,6 +7,10 @@ WORKDIR /app
 
 COPY Gemfile Gemfile.lock ./
 
+RUN apk update && apk upgrade && \
+    apk --no-cache add make gcc libc-dev && \
+    rm -rf /var/cache/apk/*
+
 RUN bundle install
 
 COPY app.rb ./

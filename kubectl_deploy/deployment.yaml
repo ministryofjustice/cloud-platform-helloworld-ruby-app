@@ -2,6 +2,7 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   name: helloworld-rubyapp
+  namespace: demo-app
 spec:
   replicas: 1
   template:
@@ -11,6 +12,7 @@ spec:
     spec:
       containers:
       - name: rubyapp
-        image: 926803513772.dkr.ecr.eu-west-1.amazonaws.com/davids-dummy-team/davids-dummy-app:latest
+        image: 754256621582.dkr.ecr.eu-west-2.amazonaws.com/cloud-platform/reference-app:demo-sinatra
+        imagePullPolicy: Always
         ports:
         - containerPort: 4567
