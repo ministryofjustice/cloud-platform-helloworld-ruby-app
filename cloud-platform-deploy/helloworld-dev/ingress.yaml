@@ -2,12 +2,13 @@ apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: helloworld-rubyapp-ingress
+  namespace: helloworld-dev
 spec:
   tls:
   - hosts:
-    - helloworld-rubyapp.apps.live-1.cloud-platform.service.justice.gov.uk
+    - helloworld-dev.apps.live-1.cloud-platform.service.justice.gov.uk
   rules:
-  - host: helloworld-rubyapp.apps.live-1.cloud-platform.service.justice.gov.uk
+  - host: helloworld-dev.apps.live-1.cloud-platform.service.justice.gov.uk
     http:
       paths:
       - path: /
