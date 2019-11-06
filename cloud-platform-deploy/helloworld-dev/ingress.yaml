@@ -2,7 +2,6 @@ apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: helloworld-rubyapp-ingress
-  namespace: helloworld-dev
 spec:
   tls:
   - hosts:

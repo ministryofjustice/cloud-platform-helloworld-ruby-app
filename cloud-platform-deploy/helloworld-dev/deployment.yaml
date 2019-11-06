@@ -2,7 +2,6 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   name: helloworld-rubyapp
-  namespace: helloworld-dev
 spec:
   replicas: 5
   template:
