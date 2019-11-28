@@ -2,13 +2,13 @@ apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   name: helloworld-rubyapp-ingress
-  namespace: helloworld-prod
+  namespace: gitops-dev
 spec:
   tls:
   - hosts:
-    - helloworld-prod.apps.gitops-test.cloud-platform.service.justice.gov.uk
+    - gitops-dev.apps.gitops-test.cloud-platform.service.justice.gov.uk
   rules:
-  - host: helloworld-prod.apps.gitops-test.cloud-platform.service.justice.gov.uk
+  - host: gitops-dev.apps.gitops-test.cloud-platform.service.justice.gov.uk
     http:
       paths:
       - path: /

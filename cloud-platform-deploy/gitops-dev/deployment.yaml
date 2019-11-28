@@ -2,7 +2,7 @@ apiVersion: extensions/v1beta1
 kind: Deployment
 metadata:
   name: helloworld-rubyapp
-  namespace: helloworld-prod
+  namespace: gitops-dev
 spec:
   replicas: 5
   template:
@@ -12,6 +12,6 @@ spec:
     spec:
       containers:
       - name: rubyapp
-        image: json0/ruby-helloworld
+        image: ministryofjustice/cloud-platform-helloworld-ruby
         ports:
         - containerPort: 4567

@@ -2,7 +2,7 @@ apiVersion: v1
 kind: Service
 metadata:
   name: rubyapp-service
-  namespace: helloworld-staging
+  namespace: gitops-dev
   labels:
     app: rubyapp-service
 spec:
