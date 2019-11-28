@@ -1,2 +1,2 @@
 secretfile filter=git-crypt diff=git-crypt
-cloud-platform-deploy/helloworld-dev/ingress.yaml filter=git-crypt diff=git-crypt
+*ingress.yaml filter=git-crypt diff=git-crypt
