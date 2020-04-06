@@ -1,0 +1,13 @@
+kind: ServiceMonitor
+apiVersion: monitoring.coreos.com/v1
+metadata:
+  name: rubyapp-service
+  labels:
+    app: rubyapp-service
+spec:
+  selector:
+    matchLabels:
+      app: rubyapp-service
+  endpoints: 
+  - port: http
+    interval: 15s
