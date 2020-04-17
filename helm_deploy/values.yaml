@@ -23,7 +23,7 @@ ingress:
     # kubernetes.io/ingress.class: nginx
     # kubernetes.io/tls-acme: "true"
   hosts:
-    - host: testapp.apps.cp-0104-1339.cloud-platform.service.justice.gov.uk
+    - host: <DNS-PREFIX>.apps.live-1.cloud-platform.service.justice.gov.uk
       paths: /
 
   tls: []
