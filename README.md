@@ -6,4 +6,5 @@ The idea is to keep the application as simple as it can possibly be, so that the
 
 Ideally, this application should stay 'pinned' to the [user guide topic]. More complex examples, e.g. including [RDS](https://aws.amazon.com/rds/) or other resources, should use separate example applications, rather than adding any complexity or additional configuration to this application.
 
-[user guide topic]: https://user-guide.cloud-platform.service.justice.gov.uk/tasks.html#deploying-a-39-hello-world-39-application-to-the-cloud-platform
+[user guide topic]: https://user-guide.cloud-platform.service.justice.gov.uk/documentation/deploying-an-app/helloworld-app-deploy.html#deploying-a-39-hello-world-39-application-to-the-cloud-platform
+
