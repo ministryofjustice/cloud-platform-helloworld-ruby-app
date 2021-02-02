@@ -5,7 +5,7 @@ metadata:
   namespace: kus-spike
 spec:
   interval: 5m
-  path: "./depoy/manifests/"
+  path: "./deploy/manifests/"
   prune: true
   sourceRef:
     kind: GitRepository
