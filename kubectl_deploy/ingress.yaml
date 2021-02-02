@@ -7,9 +7,9 @@ metadata:
 spec:
   tls:
   - hosts:
-    - helloworld-rubyapp.apps.live-1.cloud-platform.service.justice.gov.uk
+    - helloworld-rubyapp.apps.cp-2601-1538.cloud-platform.service.justice.gov.uk
   rules:
-  - host: helloworld-rubyapp.apps.live-1.cloud-platform.service.justice.gov.uk
+  - host: helloworld-rubyapp.apps.cp-2601-1538.cloud-platform.service.justice.gov.uk
     http:
       paths:
       - path: /
