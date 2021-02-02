@@ -1,0 +1,10 @@
+apiVersion: source.toolkit.fluxcd.io/v1beta1
+kind: GitRepository
+metadata:
+  name: ruby-hello
+  namespace: kus-spike
+spec:
+  interval: 1m
+  url: https://github.com/ministryofjustice/cloud-platform-helloworld-ruby-app
+  ref:
+    branch: kustomize-spike
