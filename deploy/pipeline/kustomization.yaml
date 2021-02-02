@@ -5,10 +5,10 @@ metadata:
   namespace: kus-spike
 spec:
   interval: 5m
-  path: "./kubectl_deploy/."
+  path: "./depoy/manifests/"
   prune: true
   sourceRef:
     kind: GitRepository
     name: ruby-hello
-  validation: client
+  # validation: client
   timeout: 80s
