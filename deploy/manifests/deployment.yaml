@@ -2,6 +2,8 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
   name: helloworld-rubyapp
+  # namespace MUST be specified for kustomize controller
+  namespace: kus-spike
 spec:
   replicas: 1
   selector:
