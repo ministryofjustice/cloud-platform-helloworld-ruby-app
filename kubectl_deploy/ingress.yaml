@@ -1,18 +1,19 @@
-apiVersion: networking.k8s.io/v1beta1
-kind: Ingress
+apiVersion: networking.k8s.io/v1
 metadata:
-  name: helloworld-rubyapp-ingress
+  name: helloworld
   annotations:
     kubernetes.io/ingress.class: nginx
+    external-dns.alpha.kubernetes.io/set-identifier: heloworld-<mynamespace>-green
+    external-dns.alpha.kubernetes.io/aws-weight: "100"
 spec:
-  tls:
-  - hosts:
-    - helloworld-rubyapp.apps.live-1.cloud-platform.service.justice.gov.uk
   rules:
-  - host: helloworld-rubyapp.apps.live-1.cloud-platform.service.justice.gov.uk
+  - host: helloworld-rubyapp.apps.live.cloud-platform.service.justice.gov.uk
     http:
       paths:
       - path: /
+        pathType: ImplementationSpecific
         backend:
-          serviceName: rubyapp-service
-          servicePort: 4567
+          service:
+            name: rubyapp-service
+            port:
+              number: 4567
