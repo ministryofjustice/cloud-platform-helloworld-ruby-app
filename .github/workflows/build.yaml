@@ -1,0 +1,26 @@
+name: Build the image when a PR is raised/changed
+
+on:
+  pull_request:
+    types: [opened, edited, reopened, synchronize]
+
+jobs:
+  main:
+    name: Build the image when a PR is raised/changed
+    runs-on: ubuntu-latest
+    steps:
+    -
+        name: checkout
+        uses: actions/checkout@v2
+    -
+        name: Docker meta
+        id: meta
+        uses: docker/metadata-action@v3
+        with:
+          # list of Docker images to use as base name for tags
+          images: |
+            ministryofjustice/cloud-platform-helloworld-ruby-app
+    -
+        name: Build helloworld ruby app image
+        run: |
+          docker build . 
