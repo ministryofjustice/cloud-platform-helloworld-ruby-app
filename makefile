@@ -1,5 +1,5 @@
 IMAGE := ministryofjustice/cloud-platform-helloworld-ruby
-TAG := 1.1
+TAG := 1.2
 
 .built-image: Dockerfile Gemfile Gemfile.lock makefile
 	docker build -t $(IMAGE) .

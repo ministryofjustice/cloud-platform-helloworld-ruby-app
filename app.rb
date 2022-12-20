@@ -1,10 +1,9 @@
 #!/usr/bin/env ruby
-
-require 'bundler/setup'
 require 'sinatra'
+require 'sinatra/base'
 
-set :bind, '0.0.0.0'
-
-get '/' do
-  '<h1>Hello, World!</h1>'
+class App < Sinatra::Base
+  get '/' do
+    '<h1>Hello, World!</h1>'
+  end
 end
