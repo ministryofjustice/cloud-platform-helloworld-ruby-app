@@ -1,5 +1,7 @@
 # Hello World example app.
 
+
+
 This is an extremely simple web application to use as an example in the [Cloud Platform User Guide][user guide topic].
 
 The idea is to keep the application as simple as it can possibly be, so that the only thing the user needs to care about is the actual deployment process.
