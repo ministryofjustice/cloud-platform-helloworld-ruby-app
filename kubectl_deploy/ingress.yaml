@@ -3,14 +3,14 @@ kind: Ingress
 metadata:
   name: helloworld
   annotations:
-    external-dns.alpha.kubernetes.io/set-identifier: helloworld-<mynamespace>-blue
+    external-dns.alpha.kubernetes.io/set-identifier: helloworld-ky-first-cp-app-dev-green
     external-dns.alpha.kubernetes.io/aws-weight: "100"
 spec:
   tls:
   - hosts:
-    - helloworld-rubyapp.apps.live.cloud-platform.service.justice.gov.uk
+    - ky-helloworld-rubyapp.apps.live.cloud-platform.service.justice.gov.uk
   rules:
-  - host: helloworld-rubyapp.apps.live.cloud-platform.service.justice.gov.uk
+  - host: ky-helloworld-rubyapp.apps.live.cloud-platform.service.justice.gov.uk
     http:
       paths:
       - path: /
