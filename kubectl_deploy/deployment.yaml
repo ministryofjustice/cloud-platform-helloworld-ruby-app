@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: rubyapp
-        image: ministryofjustice/cloud-platform-helloworld-ruby:1.2
+        image: 754256621582.dkr.ecr.eu-west-2.amazonaws.com/webops/ky-first-cp-app-dev:4d16c4f652ae61d0f852c08a20ed5127da042fcd
         ports:
         - containerPort: 4567
